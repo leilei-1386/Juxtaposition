@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juxtaposition</title>
+
+    <style>
+        /*typo*/
+        @import url('https://fonts.googleapis.com/css2?family=Lugrasimo&display=swap');
+
+        body {
+            font-family: "Lugrasimo", cursive;
+        }
+
+        /*mise en page*/
+        body {
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+        }
+        div {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /*décoration*/
+        div { font-size: 5vw;}
+        #G { background-color: rgb(120, 0, 0);color: rgb(209, 84, 84);}
+        #D { background-color: rgb(209, 84, 84);color: rgb(120, 0, 0);}
+
+        @media (orientation: portrait){
+            body{
+                flex-direction: column;
+            }
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div id="G">prout</div>
+    <div id="D">drôle</div>
+
+</body>
+
+</html>
